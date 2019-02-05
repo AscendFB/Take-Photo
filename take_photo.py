@@ -78,7 +78,7 @@ def usb_camera_photo():
 
     # Open the camera
     camera = cv2.VideoCapture(camera_port)
-    camera.set(10, 1)
+    camera.set(15, 0.1)
     sleep(0.1)
 
     # Let camera adjust
