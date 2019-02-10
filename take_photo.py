@@ -78,7 +78,9 @@ def usb_camera_photo():
 
     # Open the camera
     camera = cv2.VideoCapture(camera_port)
-    brightness = camera.get(cv2.cv.CV_CAP_PROP_BRIGHTNESS)
+    camera.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0)
+    camera.set(cv2.CAP_PROP_EXPOSURE, -7.0)
+    #brightness = camera.get(cv2.cv.CV_CAP_PROP_BRIGHTNESS)
     #camera.set(15, 0.1)
     #log (brightness, "info")
     sleep(0.1)
