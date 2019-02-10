@@ -10,10 +10,10 @@
  "executable": "python",
  "args": ["Take-Photo-master/take_photo.py"],
  "config": [
-    {"name": "brightness_val", "label": "Brightness", "value": 10 }
-    {"name": "contrast_val", "label": "Contrast", "value": 10 }
-    {"name": "saturation_val", "label": "Saturation", "value": 10 }
-    {"name": "hue_val", "label": "Hue", "value": 10 }
+    {"name": "brightness_val", "label": "Brightness", "value": 10 },
+    {"name": "contrast_val", "label": "Contrast", "value": 10 },
+    {"name": "saturation_val", "label": "Saturation", "value": 10 },
+    {"name": "hue_val", "label": "Hue", "value": 10 },
     {"name": "gain_val", "label": "Gain", "value": 10 }
   ]
 }
