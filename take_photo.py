@@ -81,7 +81,7 @@ def usb_camera_photo():
     camera.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0)
     camera.set(cv2.CAP_PROP_EXPOSURE, -20.0)
     current_exposure = camera.get(cv2.CAP_PROP_EXPOSURE)
-    #brightness = camera.get(cv2.cv.CV_CAP_PROP_BRIGHTNESS)
+    brightness = camera.get(cv2.CAP_PROP_BRIGHTNESS)
     #camera.set(15, 0.1)
     log(current_exposure, "info")
     sleep(0.1)
