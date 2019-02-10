@@ -89,19 +89,19 @@ def usb_camera_photo():
     hue = get_config_value(farmware_name='take-photo', config_name='hue_val', value_type=float)
     gain = get_config_value(farmware_name='take-photo', config_name='gain_val', value_type=float)
     
-    if brightness != 10:
+    if brightness != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, brightness)
 
-    if contrast != 10:
+    if contrast != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, contrast)
 
-    if saturation != 10:
+    if saturation != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, saturation)
 
-    if hue != 10:
+    if hue != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, hue)
 
-    if gain != 10:
+    if gain != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, gain)
 
 
