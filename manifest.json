@@ -1,12 +1,19 @@
 {
- "package": "take-photo",
+ "package": "take-photo_new",
  "language": "python",
  "author": "AscendFB",
  "description": "Take a photo using a USB or Raspberry Pi camera.",
- "version": "1.0.3",
+ "version": "1.0.4",
  "min_os_version_major": 3,
  "url": "https://raw.githubusercontent.com/AscendFB/Take-Photo/master/manifest.json",
  "zip": "https://github.com/AscendFB/Take-Photo/archive/master.zip",
  "executable": "python",
- "args": ["Take-Photo-master/take_photo.py"]
+ "args": ["Take-Photo-master/take_photo.py"],
+ "config": [
+    {"name": "brightness_val", "label": "Brightness", "value": 10 },
+    {"name": "contrast_val", "label": "Contrast", "value": 10 },
+    {"name": "saturation_val", "label": "Saturation", "value": 10 },
+    {"name": "hue_val", "label": "Hue", "value": 10 },
+    {"name": "gain_val", "label": "Gain", "value": 10 }
+  ]
 }
