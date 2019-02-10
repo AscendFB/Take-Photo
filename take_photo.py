@@ -93,19 +93,19 @@ def usb_camera_photo():
         camera.set(cv2.CAP_PROP_BRIGHTNESS, brightness)
         log("set brightness", "info")
     if contrast != 10.0:
-        camera.set(cv2.CAP_PROP_BRIGHTNESS, contrast)
+        camera.set(cv2.CAP_PROP_CONTRAST, contrast)
         log("set contrast", "info")
 
     if saturation != 10.0:
-        camera.set(cv2.CAP_PROP_BRIGHTNESS, saturation)
+        camera.set(cv2.CAP_PROP_SATURATION, saturation)
         log("set saturation", "info")
 
     if hue != 10.0:
-        camera.set(cv2.CAP_PROP_BRIGHTNESS, hue)
+        camera.set(cv2.CAP_PROP_HUE, hue)
         log("set hue", "info")
 
     if gain != 10.0:
-        camera.set(cv2.CAP_PROP_BRIGHTNESS, gain)
+        camera.set(cv2.CAP_PROP_GAIN, gain)
         log("set gain", "info")
 
 
