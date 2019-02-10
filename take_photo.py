@@ -10,6 +10,7 @@ import json
 import requests
 import numpy as np
 import cv2
+from farmware_tools import get_config_value
 
 
 def farmware_api_url():
@@ -79,15 +80,29 @@ def usb_camera_photo():
     # Open the camera
     camera = cv2.VideoCapture(camera_port)
     sleep(0.1)
-    current_exposure_before = camera.get(cv2.CAP_PROP_EXPOSURE)
-    log(current_exposure_before, "info")
-    camera.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0.25)
-    camera.set(cv2.CAP_PROP_EXPOSURE, -3)
-    camera.set(cv2.CAP_PROP_BRIGHTNESS, 0.3)
-    current_exposure_after = camera.get(cv2.CAP_PROP_EXPOSURE)
-    brightness = camera.get(cv2.CAP_PROP_BRIGHTNESS)
-    log(current_exposure_after, "info")
-    log(brightness, "info")
+
+
+    #setup camera parameters
+    brightness = get_config_value('take-photo', 'brightness_val')
+    contrast = get_config_value('take-photo', 'contrast_val')
+    saturation = get_config_value('take-photo', 'saturation_val')
+    hue = get_config_value('take-photo', 'hue_val')
+    gain = get_config_value('take-photo', 'gain_val')
+    
+    if brightness != 10:
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, brightness)
+
+    if contrast != 10:
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, contrast)
+
+    if saturation != 10:
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, saturation)
+
+    if hue != 10:
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, hue)
+
+    if gain != 10:
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, gain)
 
 
     # Let camera adjust
