@@ -1,7 +1,7 @@
 {
  "package": "take-photo",
  "language": "python",
- "author": "Farmbot.io",
+ "author": "AscendFB",
  "description": "Take a photo using a USB or Raspberry Pi camera.",
  "version": "1.0.3",
  "min_os_version_major": 3,
