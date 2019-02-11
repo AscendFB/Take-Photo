@@ -88,6 +88,20 @@ def usb_camera_photo():
     saturation = get_config_value(farmware_name='take-photo', config_name='saturation_val', value_type=float)
     hue = get_config_value(farmware_name='take-photo', config_name='hue_val', value_type=float)
     gain = get_config_value(farmware_name='take-photo', config_name='gain_val', value_type=float)
+    width = get_config_value(farmware_name='take-photo', config_name='width_val', value_type=int)
+    height = get_config_value(farmware_name='take-photo', config_name='height_val', value_type=int)
+    
+    if width != 640:
+        camera.set(CV_CAP_PROP_FRAME_WIDTH, width);
+        log("Resolution width:"{}.format(width), "info")
+    else:
+        camera.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+    
+    if height != 480:
+        camera.set(CV_CAP_PROP_FRAME_HEIGHT, height);
+        log("Resolution height:"{}.format(height), "info")
+    else:
+        ccamera.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
     
     if brightness != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, brightness)
