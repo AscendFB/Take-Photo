@@ -95,13 +95,13 @@ def usb_camera_photo():
         camera.set(cv2.CAP_PROP_FRAME_WIDTH, width);
         log("Resolution width:"{}.format(width), "info")
     else:
-        camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640);
+        camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     
     if height != 480:
         camera.set(cv2.CAP_PROP_FRAME_HEIGHT, height);
         log("Resolution height:"{}.format(height), "info")
     else:
-        ccamera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480);
+        camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     
     if brightness != 10.0:
         camera.set(cv2.CAP_PROP_BRIGHTNESS, brightness)
