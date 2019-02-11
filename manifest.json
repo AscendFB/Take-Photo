@@ -14,6 +14,8 @@
     {"name": "contrast_val", "label": "Contrast", "value": 10.0 },
     {"name": "saturation_val", "label": "Saturation", "value": 10.0 },
     {"name": "hue_val", "label": "Hue", "value": 10.0 },
-    {"name": "gain_val", "label": "Gain", "value": 10.0 }
+    {"name": "gain_val", "label": "Gain", "value": 10.0 },
+    {"name": "width_val", "label": "Resolution Width", "value": 640 },
+    {"name": "height_val", "label": "Resolution Height", "value": 480 }
   ]
 }
