@@ -93,13 +93,13 @@ def usb_camera_photo():
     
     if width != 640:
         camera.set(cv2.CAP_PROP_FRAME_WIDTH, width);
-        log("Resolution width:"{}.format(width), "info")
+        log("Resolution width:{}".format(width), "info")
     else:
         camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     
     if height != 480:
         camera.set(cv2.CAP_PROP_FRAME_HEIGHT, height);
-        log("Resolution height:"{}.format(height), "info")
+        log("Resolution height:{}".format(height), "info")
     else:
         camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     
