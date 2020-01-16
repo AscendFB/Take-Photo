@@ -3,19 +3,21 @@
  "language": "python",
  "author": "AscendFB",
  "description": "Take a photo using a USB or Raspberry Pi camera.",
+ "farmware_manifest_version":"2.0.0",
+ "package_version":"1.0.0",
  "version": "1.0.4",
- "min_os_version_major": 3,
+ "min_os_version_major":">= 8.0.0",
  "url": "https://raw.githubusercontent.com/AscendFB/Take-Photo/master/manifest.json",
  "zip": "https://github.com/AscendFB/Take-Photo/archive/master.zip",
  "executable": "python",
- "args": ["Take-Photo-master/take_photo.py"],
- "config": [
-    {"name": "brightness_val", "label": "Brightness", "value": 10.0 },
-    {"name": "contrast_val", "label": "Contrast", "value": 10.0 },
-    {"name": "saturation_val", "label": "Saturation", "value": 10.0 },
-    {"name": "hue_val", "label": "Hue", "value": 10.0 },
-    {"name": "gain_val", "label": "Gain", "value": 10.0 },
-    {"name": "width_val", "label": "Resolution Width", "value": 640 },
-    {"name": "height_val", "label": "Resolution Height", "value": 480 }
-  ]
+ "args": "Take-Photo-master/take_photo.py",
+ "config":{
+  "1":  {"name": "brightness_val", "label": "Brightness", "value": 10.0 },
+  "2":  {"name": "contrast_val", "label": "Contrast", "value": 10.0 },
+  "3":  {"name": "saturation_val", "label": "Saturation", "value": 10.0 },
+  "4":  {"name": "hue_val", "label": "Hue", "value": 10.0 },
+  "5":  {"name": "gain_val", "label": "Gain", "value": 10.0 },
+  "6":  {"name": "width_val", "label": "Resolution Width", "value": 640 },
+  "7":  {"name": "height_val", "label": "Resolution Height", "value": 480 }
+ }
 }
