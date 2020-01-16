@@ -125,6 +125,7 @@ def usb_camera_photo():
         
     if exp != -1:
         camera.set(cv2.CAP_PROP_EXPOSURE, exp)
+        camera.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0.25)
         log("set exposure", "info")
 
     # Let camera adjust
