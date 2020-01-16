@@ -83,13 +83,13 @@ def usb_camera_photo():
 
 
     #setup camera parameters
-    brightness = get_config_value(farmware_name='take-photo', config_name='brightness_val', value_type=float)
-    contrast = get_config_value(farmware_name='take-photo', config_name='contrast_val', value_type=float)
-    saturation = get_config_value(farmware_name='take-photo', config_name='saturation_val', value_type=float)
-    hue = get_config_value(farmware_name='take-photo', config_name='hue_val', value_type=float)
-    gain = get_config_value(farmware_name='take-photo', config_name='gain_val', value_type=float)
-    width = get_config_value(farmware_name='take-photo', config_name='width_val', value_type=int)
-    height = get_config_value(farmware_name='take-photo', config_name='height_val', value_type=int)
+    brightness = get_config_value(farmware_name='take-photo-testing', config_name='brightness_val', value_type=float)
+    contrast = get_config_value(farmware_name='take-photo-testing', config_name='contrast_val', value_type=float)
+    saturation = get_config_value(farmware_name='take-photo-testing', config_name='saturation_val', value_type=float)
+    hue = get_config_value(farmware_name='take-photo-testing', config_name='hue_val', value_type=float)
+    gain = get_config_value(farmware_name='take-photo-testing', config_name='gain_val', value_type=float)
+    width = get_config_value(farmware_name='take-photo-testing', config_name='width_val', value_type=int)
+    height = get_config_value(farmware_name='take-photo-testing', config_name='height_val', value_type=int)
     
     if width != 640:
         camera.set(cv2.CAP_PROP_FRAME_WIDTH, width);
