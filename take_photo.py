@@ -88,6 +88,7 @@ def usb_camera_photo():
     saturation = get_config_value(farmware_name='take-photo-testing', config_name='saturation_val', value_type=float)
     hue = get_config_value(farmware_name='take-photo-testing', config_name='hue_val', value_type=float)
     gain = get_config_value(farmware_name='take-photo-testing', config_name='gain_val', value_type=float)
+    exp = get_config_value(farmware_name='take-photo-testing', config_name='exp_val', value_type=int)
     width = get_config_value(farmware_name='take-photo-testing', config_name='width_val', value_type=int)
     height = get_config_value(farmware_name='take-photo-testing', config_name='height_val', value_type=int)
     
@@ -121,7 +122,10 @@ def usb_camera_photo():
     if gain != 10.0:
         camera.set(cv2.CAP_PROP_GAIN, gain)
         log("set gain", "info")
-
+        
+    if exp != -1:
+        camera.set(cv2.CAP_PROP_EXPOSURE, exp)
+        log("set exposure", "info")
 
     # Let camera adjust
     for _ in range(discard_frames):
