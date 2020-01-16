@@ -17,7 +17,7 @@
   "3":  {"name": "saturation_val", "label": "Saturation", "value": 10.0 },
   "4":  {"name": "hue_val", "label": "Hue", "value": 10.0 },
   "5":  {"name": "gain_val", "label": "Gain", "value": 10.0 },
-  "6":  {"name": "exp_val", "label": "Exposure", "value": -1 },
+  "6":  {"name": "exp_val", "label": "Exposure", "value": 0 },
   "7":  {"name": "width_val", "label": "Resolution Width", "value": 640 },
   "8":  {"name": "height_val", "label": "Resolution Height", "value": 480 }
  }
