@@ -1,5 +1,5 @@
 {
- "package": "take-photo",
+ "package": "take-photo-testing",
  "language": "python",
  "author": "AscendFB",
  "description": "Take a photo using a USB or Raspberry Pi camera.",
